@@ -1,0 +1,139 @@
+var wms_layers = [];
+
+
+        var lyr_ESRIWorldTopo_0 = new ol.layer.Tile({
+            'title': 'ESRI World Topo',
+            'type': 'base',
+            'opacity': 0.795000,
+            
+            
+            source: new ol.source.XYZ({
+    attributions: ' ',
+                url: 'http://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}'
+            })
+        });
+var format_tourdivide2021_v2_track_postgis_1 = new ol.format.GeoJSON();
+var features_tourdivide2021_v2_track_postgis_1 = format_tourdivide2021_v2_track_postgis_1.readFeatures(json_tourdivide2021_v2_track_postgis_1, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_tourdivide2021_v2_track_postgis_1 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_tourdivide2021_v2_track_postgis_1.addFeatures(features_tourdivide2021_v2_track_postgis_1);
+var lyr_tourdivide2021_v2_track_postgis_1 = new ol.layer.Vector({
+                declutter: true,
+                source:jsonSource_tourdivide2021_v2_track_postgis_1, 
+                style: style_tourdivide2021_v2_track_postgis_1,
+                interactive: true,
+                title: '<img src="styles/legend/tourdivide2021_v2_track_postgis_1.png" /> tourdivide2021_v2_track_postgis'
+            });
+var format_cafe_buffer_2 = new ol.format.GeoJSON();
+var features_cafe_buffer_2 = format_cafe_buffer_2.readFeatures(json_cafe_buffer_2, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_cafe_buffer_2 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_cafe_buffer_2.addFeatures(features_cafe_buffer_2);
+var lyr_cafe_buffer_2 = new ol.layer.Vector({
+                declutter: true,
+                source:jsonSource_cafe_buffer_2, 
+                style: style_cafe_buffer_2,
+                interactive: true,
+                title: '<img src="styles/legend/cafe_buffer_2.png" /> cafe_buffer'
+            });
+var format_supermarket_buffer_3 = new ol.format.GeoJSON();
+var features_supermarket_buffer_3 = format_supermarket_buffer_3.readFeatures(json_supermarket_buffer_3, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_supermarket_buffer_3 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_supermarket_buffer_3.addFeatures(features_supermarket_buffer_3);
+var lyr_supermarket_buffer_3 = new ol.layer.Vector({
+                declutter: true,
+                source:jsonSource_supermarket_buffer_3, 
+                style: style_supermarket_buffer_3,
+                interactive: true,
+                title: '<img src="styles/legend/supermarket_buffer_3.png" /> supermarket_buffer'
+            });
+var format_convenience_buffer_4 = new ol.format.GeoJSON();
+var features_convenience_buffer_4 = format_convenience_buffer_4.readFeatures(json_convenience_buffer_4, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_convenience_buffer_4 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_convenience_buffer_4.addFeatures(features_convenience_buffer_4);
+var lyr_convenience_buffer_4 = new ol.layer.Vector({
+                declutter: true,
+                source:jsonSource_convenience_buffer_4, 
+                style: style_convenience_buffer_4,
+                interactive: true,
+                title: '<img src="styles/legend/convenience_buffer_4.png" /> convenience_buffer'
+            });
+var format_bike_shop_buffer_5 = new ol.format.GeoJSON();
+var features_bike_shop_buffer_5 = format_bike_shop_buffer_5.readFeatures(json_bike_shop_buffer_5, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_bike_shop_buffer_5 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_bike_shop_buffer_5.addFeatures(features_bike_shop_buffer_5);
+var lyr_bike_shop_buffer_5 = new ol.layer.Vector({
+                declutter: true,
+                source:jsonSource_bike_shop_buffer_5, 
+                style: style_bike_shop_buffer_5,
+                interactive: true,
+                title: '<img src="styles/legend/bike_shop_buffer_5.png" /> bike_shop_buffer'
+            });
+var format_post_office_buffer_6 = new ol.format.GeoJSON();
+var features_post_office_buffer_6 = format_post_office_buffer_6.readFeatures(json_post_office_buffer_6, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_post_office_buffer_6 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_post_office_buffer_6.addFeatures(features_post_office_buffer_6);
+var lyr_post_office_buffer_6 = new ol.layer.Vector({
+                declutter: true,
+                source:jsonSource_post_office_buffer_6, 
+                style: style_post_office_buffer_6,
+                interactive: true,
+                title: '<img src="styles/legend/post_office_buffer_6.png" /> post_office_buffer'
+            });
+var format_accommodation_buffer_7 = new ol.format.GeoJSON();
+var features_accommodation_buffer_7 = format_accommodation_buffer_7.readFeatures(json_accommodation_buffer_7, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_accommodation_buffer_7 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_accommodation_buffer_7.addFeatures(features_accommodation_buffer_7);
+var lyr_accommodation_buffer_7 = new ol.layer.Vector({
+                declutter: true,
+                source:jsonSource_accommodation_buffer_7, 
+                style: style_accommodation_buffer_7,
+                interactive: true,
+                title: '<img src="styles/legend/accommodation_buffer_7.png" /> accommodation_buffer'
+            });
+
+lyr_ESRIWorldTopo_0.setVisible(true);lyr_tourdivide2021_v2_track_postgis_1.setVisible(true);lyr_cafe_buffer_2.setVisible(true);lyr_supermarket_buffer_3.setVisible(true);lyr_convenience_buffer_4.setVisible(true);lyr_bike_shop_buffer_5.setVisible(true);lyr_post_office_buffer_6.setVisible(true);lyr_accommodation_buffer_7.setVisible(true);
+var layersList = [lyr_ESRIWorldTopo_0,lyr_tourdivide2021_v2_track_postgis_1,lyr_cafe_buffer_2,lyr_supermarket_buffer_3,lyr_convenience_buffer_4,lyr_bike_shop_buffer_5,lyr_post_office_buffer_6,lyr_accommodation_buffer_7];
+lyr_tourdivide2021_v2_track_postgis_1.set('fieldAliases', {'gid': 'gid', 'name': 'name', 'gpxx_track': 'gpxx_track', 'line': 'line', });
+lyr_cafe_buffer_2.set('fieldAliases', {'gid': 'gid', 'full_id': 'full_id', 'osm_id': 'osm_id', 'osm_type': 'osm_type', 'amenity': 'amenity', 'not_brand_': 'not_brand_', 'full_name': 'full_name', 'addr_count': 'addr_count', 'review': 'review', 'phone_mnem': 'phone_mnem', 'indoor': 'indoor', 'image': 'image', 'toilets_ac': 'toilets_ac', 'name_zh-ha': 'name_zh-ha', 'min_age': 'min_age', 'diet_glute': 'diet_glute', 'strapline': 'strapline', 'alcohol': 'alcohol', 'contact_in': 'contact_in', 'start_date': 'start_date', 'access': 'access', 'addr_floor': 'addr_floor', 'name_1': 'name_1', 'leisure': 'leisure', 'drive_thro': 'drive_thro', 'capacity': 'capacity', 'opening_da': 'opening_da', 'amenity_ic': 'amenity_ic', 'shop_deli': 'shop_deli', 'sport': 'sport', 'loc_name': 'loc_name', 'breakfast': 'breakfast', 'contact_fa': 'contact_fa', 'survey_dat': 'survey_dat', 'utahagrc_p': 'utahagrc_p', 'building': 'building', 'opening_ho': 'opening_ho', 'bar': 'bar', 'name_it': 'name_it', 'contact_em': 'contact_em', 'entrance': 'entrance', 'diet_koshe': 'diet_koshe', 'facebook': 'facebook', 'delivery': 'delivery', 'constructi': 'constructi', 'fast_food': 'fast_food', 'cafe': 'cafe', 'cat': 'cat', 'capacity_c': 'capacity_c', 'amenity_1': 'amenity_1', 'reservatio': 'reservatio', 'name_ko': 'name_ko', 'ref': 'ref', 'old_name': 'old_name', 'atm': 'atm', 'source_nam': 'source_nam', 'toilets': 'toilets', 'payment_go': 'payment_go', 'payment_co': 'payment_co', 'payment_ch': 'payment_ch', 'payment_ap': 'payment_ap', 'name_zh': 'name_zh', 'name_en': 'name_en', 'brand_zh': 'brand_zh', 'brand_en': 'brand_en', 'pets_allow': 'pets_allow', 'dog': 'dog', 'payment_vi': 'payment_vi', 'payment_ma': 'payment_ma', 'payment_de': 'payment_de', 'payment_cr': 'payment_cr', 'payment__1': 'payment__1', 'payment_ca': 'payment_ca', 'payment_am': 'payment_am', 'internet_a': 'internet_a', 'note_openi': 'note_openi', 'yelp': 'yelp', 'lunch': 'lunch', 'name_fa': 'name_fa', 'contact_ph': 'contact_ph', 'int_name': 'int_name', 'toilets_wh': 'toilets_wh', 'neon': 'neon', 'building_a': 'building_a', 'diet_halal': 'diet_halal', 'contact_we': 'contact_we', 'short_name': 'short_name', 'diet_veget': 'diet_veget', 'addr_house': 'addr_house', 'disused': 'disused', 'opening__1': 'opening__1', 'food': 'food', 'diet_vegan': 'diet_vegan', 'descriptio': 'descriptio', 'wifi': 'wifi', 'wikipedia': 'wikipedia', 'wikidata': 'wikidata', 'tourism': 'tourism', 'site_type': 'site_type', 'natural': 'natural', 'historic': 'historic', 'layer': 'layer', 'is_in_stat': 'is_in_stat', 'is_in_st_1': 'is_in_st_1', 'is_in_city': 'is_in_city', 'addr_cou_1': 'addr_cou_1', 'alt_name2': 'alt_name2', 'alt_name': 'alt_name', 'payment_bi': 'payment_bi', 'currency_x': 'currency_x', 'addr_unit': 'addr_unit', 'addr_suite': 'addr_suite', 'odbl': 'odbl', 'email': 'email', 'air_condit': 'air_condit', 'wheelchair': 'wheelchair', 'smoking': 'smoking', 'opening__2': 'opening__2', 'branch': 'branch', 'level': 'level', 'official_n': 'official_n', 'addr_provi': 'addr_provi', 'takeaway': 'takeaway', 'operator': 'operator', 'drive_th_1': 'drive_th_1', 'brand_wiki': 'brand_wiki', 'brand_wi_1': 'brand_wi_1', 'brand': 'brand', 'url': 'url', 'phone': 'phone', 'internet_1': 'internet_1', 'website': 'website', 'shop': 'shop', 'gis_pin': 'gis_pin', 'outdoor_se': 'outdoor_se', 'name': 'name', 'internet_2': 'internet_2', 'cuisine': 'cuisine', 'addr_stree': 'addr_stree', 'addr_state': 'addr_state', 'addr_postc': 'addr_postc', 'addr_hou_1': 'addr_hou_1', 'addr_city': 'addr_city', });
+lyr_supermarket_buffer_3.set('fieldAliases', {'gid': 'gid', 'fid': 'fid', 'full_id': 'full_id', 'phone': 'phone', 'opening_ho': 'opening_ho', 'addr_stree': 'addr_stree', 'addr_house': 'addr_house', 'name': 'name', '__gid': '__gid', });
+lyr_convenience_buffer_4.set('fieldAliases', {'gid': 'gid', 'fid': 'fid', 'full_id': 'full_id', 'osm_id': 'osm_id', 'osm_type': 'osm_type', 'shop': 'shop', 'building_l': 'building_l', 'email': 'email', 'contact_we': 'contact_we', 'contact_ph': 'contact_ph', 'organic': 'organic', 'survey_dat': 'survey_dat', 'payment_vi': 'payment_vi', 'payment__1': 'payment__1', 'payment_ma': 'payment_ma', 'payment_di': 'payment_di', 'payment__2': 'payment__2', 'name_ru': 'name_ru', 'internet_a': 'internet_a', 'fuel_regul': 'fuel_regul', 'fuel_octan': 'fuel_octan', 'fuel_diese': 'fuel_diese', 'payment_co': 'payment_co', 'addr_full': 'addr_full', 'name_ar': 'name_ar', 'toilets': 'toilets', 'changing_t': 'changing_t', 'level': 'level', 'delivery': 'delivery', 'air_condit': 'air_condit', 'old_name': 'old_name', 'descriptio': 'descriptio', 'short_name': 'short_name', 'fax': 'fax', 'building': 'building', 'not_brand_': 'not_brand_', 'name_fa': 'name_fa', 'payment_de': 'payment_de', 'payment_cr': 'payment_cr', 'payment_ca': 'payment_ca', 'opening_ho': 'opening_ho', 'addr_house': 'addr_house', 'entrance': 'entrance', 'alt_name': 'alt_name', 'pin': 'pin', 'lot': 'lot', 'block': 'block', 'wikipedia': 'wikipedia', 'addr_count': 'addr_count', 'descript_1': 'descript_1', 'branch': 'branch', 'addr_unit': 'addr_unit', 'website': 'website', 'wheelchair': 'wheelchair', 'wheelcha_1': 'wheelcha_1', 'toilets_wh': 'toilets_wh', 'phone': 'phone', 'historic': 'historic', 'ref': 'ref', 'operator': 'operator', 'gnis_state': 'gnis_state', 'gnis_featu': 'gnis_featu', 'gnis_creat': 'gnis_creat', 'gnis_count': 'gnis_count', 'self_servi': 'self_servi', 'addr_state': 'addr_state', 'addr_stree': 'addr_stree', 'addr_provi': 'addr_provi', 'addr_postc': 'addr_postc', 'addr_hou_1': 'addr_hou_1', 'addr_city': 'addr_city', 'opening__1': 'opening__1', 'name_en': 'name_en', 'brand_wiki': 'brand_wiki', 'brand_wi_1': 'brand_wi_1', 'subdivisio': 'subdivisio', 'street_add': 'street_add', 'source_ref': 'source_ref', 'odbl': 'odbl', 'gis_pin': 'gis_pin', 'wikidata': 'wikidata', 'population': 'population', 'place': 'place', 'name': 'name', 'is_in': 'is_in', 'import_uui': 'import_uui', 'gnis_id': 'gnis_id', 'gnis_st_nu': 'gnis_st_nu', 'gnis_st_al': 'gnis_st_al', 'gnis_cou_1': 'gnis_cou_1', 'gnis_cou_2': 'gnis_cou_2', 'gnis_class': 'gnis_class', 'ele': 'ele', 'brand': 'brand', 'amenity': 'amenity', });
+lyr_bike_shop_buffer_5.set('fieldAliases', {'gid': 'gid', 'fid': 'fid', 'full_id': 'full_id', 'opening_ho': 'opening_ho', 'phone': 'phone', 'name': 'name', 'addr_stree': 'addr_stree', 'addr_house': 'addr_house', '__gid': '__gid', });
+lyr_post_office_buffer_6.set('fieldAliases', {'gid': 'gid', 'full_id': 'full_id', 'osm_id': 'osm_id', 'opening_ho': 'opening_ho', 'phone': 'phone', 'name': 'name', 'addr_stree': 'addr_stree', 'addr_house': 'addr_house', '__gid': '__gid', });
+lyr_accommodation_buffer_7.set('fieldAliases', {'gid': 'gid', 'full_id': 'full_id', 'osm_id': 'osm_id', 'tourism': 'tourism', 'addr_stree': 'addr_stree', 'addr_hou_1': 'addr_hou_1', 'addr_city': 'addr_city', 'phone': 'phone', 'operator': 'operator', 'name': 'name', '__gid': '__gid', 'name_2': 'name_2', 'gpxx_track': 'gpxx_track', 'line': 'line', });
+lyr_tourdivide2021_v2_track_postgis_1.set('fieldImages', {'gid': 'TextEdit', 'name': 'TextEdit', 'gpxx_track': 'TextEdit', 'line': 'TextEdit', });
+lyr_cafe_buffer_2.set('fieldImages', {'gid': 'TextEdit', 'full_id': 'TextEdit', 'osm_id': 'TextEdit', 'osm_type': 'TextEdit', 'amenity': 'TextEdit', 'not_brand_': 'TextEdit', 'full_name': 'TextEdit', 'addr_count': 'TextEdit', 'review': 'TextEdit', 'phone_mnem': 'TextEdit', 'indoor': 'TextEdit', 'image': 'TextEdit', 'toilets_ac': 'TextEdit', 'name_zh-ha': 'TextEdit', 'min_age': 'TextEdit', 'diet_glute': 'TextEdit', 'strapline': 'TextEdit', 'alcohol': 'TextEdit', 'contact_in': 'TextEdit', 'start_date': 'TextEdit', 'access': 'TextEdit', 'addr_floor': 'TextEdit', 'name_1': 'TextEdit', 'leisure': 'TextEdit', 'drive_thro': 'TextEdit', 'capacity': 'TextEdit', 'opening_da': 'TextEdit', 'amenity_ic': 'TextEdit', 'shop_deli': 'TextEdit', 'sport': 'TextEdit', 'loc_name': 'TextEdit', 'breakfast': 'TextEdit', 'contact_fa': 'TextEdit', 'survey_dat': 'TextEdit', 'utahagrc_p': 'TextEdit', 'building': 'TextEdit', 'opening_ho': 'TextEdit', 'bar': 'TextEdit', 'name_it': 'TextEdit', 'contact_em': 'TextEdit', 'entrance': 'TextEdit', 'diet_koshe': 'TextEdit', 'facebook': 'TextEdit', 'delivery': 'TextEdit', 'constructi': 'TextEdit', 'fast_food': 'TextEdit', 'cafe': 'TextEdit', 'cat': 'TextEdit', 'capacity_c': 'TextEdit', 'amenity_1': 'TextEdit', 'reservatio': 'TextEdit', 'name_ko': 'TextEdit', 'ref': 'TextEdit', 'old_name': 'TextEdit', 'atm': 'TextEdit', 'source_nam': 'TextEdit', 'toilets': 'TextEdit', 'payment_go': 'TextEdit', 'payment_co': 'TextEdit', 'payment_ch': 'TextEdit', 'payment_ap': 'TextEdit', 'name_zh': 'TextEdit', 'name_en': 'TextEdit', 'brand_zh': 'TextEdit', 'brand_en': 'TextEdit', 'pets_allow': 'TextEdit', 'dog': 'TextEdit', 'payment_vi': 'TextEdit', 'payment_ma': 'TextEdit', 'payment_de': 'TextEdit', 'payment_cr': 'TextEdit', 'payment__1': 'TextEdit', 'payment_ca': 'TextEdit', 'payment_am': 'TextEdit', 'internet_a': 'TextEdit', 'note_openi': 'TextEdit', 'yelp': 'TextEdit', 'lunch': 'TextEdit', 'name_fa': 'TextEdit', 'contact_ph': 'TextEdit', 'int_name': 'TextEdit', 'toilets_wh': 'TextEdit', 'neon': 'TextEdit', 'building_a': 'TextEdit', 'diet_halal': 'TextEdit', 'contact_we': 'TextEdit', 'short_name': 'TextEdit', 'diet_veget': 'TextEdit', 'addr_house': 'TextEdit', 'disused': 'TextEdit', 'opening__1': 'TextEdit', 'food': 'TextEdit', 'diet_vegan': 'TextEdit', 'descriptio': 'TextEdit', 'wifi': 'TextEdit', 'wikipedia': 'TextEdit', 'wikidata': 'TextEdit', 'tourism': 'TextEdit', 'site_type': 'TextEdit', 'natural': 'TextEdit', 'historic': 'TextEdit', 'layer': 'TextEdit', 'is_in_stat': 'TextEdit', 'is_in_st_1': 'TextEdit', 'is_in_city': 'TextEdit', 'addr_cou_1': 'TextEdit', 'alt_name2': 'TextEdit', 'alt_name': 'TextEdit', 'payment_bi': 'TextEdit', 'currency_x': 'TextEdit', 'addr_unit': 'TextEdit', 'addr_suite': 'TextEdit', 'odbl': 'TextEdit', 'email': 'TextEdit', 'air_condit': 'TextEdit', 'wheelchair': 'TextEdit', 'smoking': 'TextEdit', 'opening__2': 'TextEdit', 'branch': 'TextEdit', 'level': 'TextEdit', 'official_n': 'TextEdit', 'addr_provi': 'TextEdit', 'takeaway': 'TextEdit', 'operator': 'TextEdit', 'drive_th_1': 'TextEdit', 'brand_wiki': 'TextEdit', 'brand_wi_1': 'TextEdit', 'brand': 'TextEdit', 'url': 'TextEdit', 'phone': 'TextEdit', 'internet_1': 'TextEdit', 'website': 'TextEdit', 'shop': 'TextEdit', 'gis_pin': 'TextEdit', 'outdoor_se': 'TextEdit', 'name': 'TextEdit', 'internet_2': 'TextEdit', 'cuisine': 'TextEdit', 'addr_stree': 'TextEdit', 'addr_state': 'TextEdit', 'addr_postc': 'TextEdit', 'addr_hou_1': 'TextEdit', 'addr_city': 'TextEdit', });
+lyr_supermarket_buffer_3.set('fieldImages', {'gid': 'TextEdit', 'fid': 'TextEdit', 'full_id': 'TextEdit', 'phone': 'TextEdit', 'opening_ho': 'TextEdit', 'addr_stree': 'TextEdit', 'addr_house': 'TextEdit', 'name': 'TextEdit', '__gid': 'TextEdit', });
+lyr_convenience_buffer_4.set('fieldImages', {'gid': 'TextEdit', 'fid': 'TextEdit', 'full_id': 'TextEdit', 'osm_id': 'TextEdit', 'osm_type': 'TextEdit', 'shop': 'TextEdit', 'building_l': 'TextEdit', 'email': 'TextEdit', 'contact_we': 'TextEdit', 'contact_ph': 'TextEdit', 'organic': 'TextEdit', 'survey_dat': 'TextEdit', 'payment_vi': 'TextEdit', 'payment__1': 'TextEdit', 'payment_ma': 'TextEdit', 'payment_di': 'TextEdit', 'payment__2': 'TextEdit', 'name_ru': 'TextEdit', 'internet_a': 'TextEdit', 'fuel_regul': 'TextEdit', 'fuel_octan': 'TextEdit', 'fuel_diese': 'TextEdit', 'payment_co': 'TextEdit', 'addr_full': 'TextEdit', 'name_ar': 'TextEdit', 'toilets': 'TextEdit', 'changing_t': 'TextEdit', 'level': 'TextEdit', 'delivery': 'TextEdit', 'air_condit': 'TextEdit', 'old_name': 'TextEdit', 'descriptio': 'TextEdit', 'short_name': 'TextEdit', 'fax': 'TextEdit', 'building': 'TextEdit', 'not_brand_': 'TextEdit', 'name_fa': 'TextEdit', 'payment_de': 'TextEdit', 'payment_cr': 'TextEdit', 'payment_ca': 'TextEdit', 'opening_ho': 'TextEdit', 'addr_house': 'TextEdit', 'entrance': 'TextEdit', 'alt_name': 'TextEdit', 'pin': 'TextEdit', 'lot': 'TextEdit', 'block': 'TextEdit', 'wikipedia': 'TextEdit', 'addr_count': 'TextEdit', 'descript_1': 'TextEdit', 'branch': 'TextEdit', 'addr_unit': 'TextEdit', 'website': 'TextEdit', 'wheelchair': 'TextEdit', 'wheelcha_1': 'TextEdit', 'toilets_wh': 'TextEdit', 'phone': 'TextEdit', 'historic': 'TextEdit', 'ref': 'TextEdit', 'operator': 'TextEdit', 'gnis_state': 'TextEdit', 'gnis_featu': 'TextEdit', 'gnis_creat': 'TextEdit', 'gnis_count': 'TextEdit', 'self_servi': 'TextEdit', 'addr_state': 'TextEdit', 'addr_stree': 'TextEdit', 'addr_provi': 'TextEdit', 'addr_postc': 'TextEdit', 'addr_hou_1': 'TextEdit', 'addr_city': 'TextEdit', 'opening__1': 'TextEdit', 'name_en': 'TextEdit', 'brand_wiki': 'TextEdit', 'brand_wi_1': 'TextEdit', 'subdivisio': 'TextEdit', 'street_add': 'TextEdit', 'source_ref': 'TextEdit', 'odbl': 'TextEdit', 'gis_pin': 'TextEdit', 'wikidata': 'TextEdit', 'population': 'TextEdit', 'place': 'TextEdit', 'name': 'TextEdit', 'is_in': 'TextEdit', 'import_uui': 'TextEdit', 'gnis_id': 'TextEdit', 'gnis_st_nu': 'TextEdit', 'gnis_st_al': 'TextEdit', 'gnis_cou_1': 'TextEdit', 'gnis_cou_2': 'TextEdit', 'gnis_class': 'TextEdit', 'ele': 'TextEdit', 'brand': 'TextEdit', 'amenity': 'TextEdit', });
+lyr_bike_shop_buffer_5.set('fieldImages', {'gid': 'TextEdit', 'fid': 'TextEdit', 'full_id': 'TextEdit', 'opening_ho': 'TextEdit', 'phone': 'TextEdit', 'name': 'TextEdit', 'addr_stree': 'TextEdit', 'addr_house': 'TextEdit', '__gid': 'TextEdit', });
+lyr_post_office_buffer_6.set('fieldImages', {'gid': 'TextEdit', 'full_id': 'TextEdit', 'osm_id': 'TextEdit', 'opening_ho': 'TextEdit', 'phone': 'TextEdit', 'name': 'TextEdit', 'addr_stree': 'TextEdit', 'addr_house': 'TextEdit', '__gid': 'TextEdit', });
+lyr_accommodation_buffer_7.set('fieldImages', {'gid': 'TextEdit', 'full_id': 'TextEdit', 'osm_id': 'TextEdit', 'tourism': 'TextEdit', 'addr_stree': 'TextEdit', 'addr_hou_1': 'TextEdit', 'addr_city': 'TextEdit', 'phone': 'TextEdit', 'operator': 'TextEdit', 'name': 'TextEdit', '__gid': 'TextEdit', 'name_2': 'TextEdit', 'gpxx_track': 'TextEdit', 'line': 'TextEdit', });
+lyr_tourdivide2021_v2_track_postgis_1.set('fieldLabels', {'gid': 'no label', 'name': 'no label', 'gpxx_track': 'no label', 'line': 'no label', });
+lyr_cafe_buffer_2.set('fieldLabels', {'gid': 'no label', 'full_id': 'no label', 'osm_id': 'no label', 'osm_type': 'no label', 'amenity': 'no label', 'not_brand_': 'no label', 'full_name': 'no label', 'addr_count': 'header label', 'review': 'no label', 'phone_mnem': 'no label', 'indoor': 'no label', 'image': 'no label', 'toilets_ac': 'no label', 'name_zh-ha': 'no label', 'min_age': 'no label', 'diet_glute': 'no label', 'strapline': 'no label', 'alcohol': 'no label', 'contact_in': 'no label', 'start_date': 'no label', 'access': 'no label', 'addr_floor': 'no label', 'name_1': 'no label', 'leisure': 'no label', 'drive_thro': 'no label', 'capacity': 'no label', 'opening_da': 'no label', 'amenity_ic': 'no label', 'shop_deli': 'no label', 'sport': 'no label', 'loc_name': 'no label', 'breakfast': 'no label', 'contact_fa': 'no label', 'survey_dat': 'no label', 'utahagrc_p': 'no label', 'building': 'no label', 'opening_ho': 'no label', 'bar': 'no label', 'name_it': 'no label', 'contact_em': 'no label', 'entrance': 'no label', 'diet_koshe': 'no label', 'facebook': 'no label', 'delivery': 'no label', 'constructi': 'no label', 'fast_food': 'no label', 'cafe': 'no label', 'cat': 'no label', 'capacity_c': 'no label', 'amenity_1': 'no label', 'reservatio': 'no label', 'name_ko': 'no label', 'ref': 'no label', 'old_name': 'no label', 'atm': 'no label', 'source_nam': 'no label', 'toilets': 'no label', 'payment_go': 'no label', 'payment_co': 'no label', 'payment_ch': 'no label', 'payment_ap': 'no label', 'name_zh': 'no label', 'name_en': 'no label', 'brand_zh': 'no label', 'brand_en': 'no label', 'pets_allow': 'no label', 'dog': 'no label', 'payment_vi': 'no label', 'payment_ma': 'no label', 'payment_de': 'no label', 'payment_cr': 'no label', 'payment__1': 'no label', 'payment_ca': 'no label', 'payment_am': 'no label', 'internet_a': 'no label', 'note_openi': 'no label', 'yelp': 'no label', 'lunch': 'no label', 'name_fa': 'no label', 'contact_ph': 'no label', 'int_name': 'no label', 'toilets_wh': 'no label', 'neon': 'no label', 'building_a': 'no label', 'diet_halal': 'no label', 'contact_we': 'no label', 'short_name': 'no label', 'diet_veget': 'no label', 'addr_house': 'no label', 'disused': 'no label', 'opening__1': 'no label', 'food': 'no label', 'diet_vegan': 'no label', 'descriptio': 'no label', 'wifi': 'no label', 'wikipedia': 'no label', 'wikidata': 'no label', 'tourism': 'no label', 'site_type': 'no label', 'natural': 'no label', 'historic': 'no label', 'layer': 'no label', 'is_in_stat': 'no label', 'is_in_st_1': 'no label', 'is_in_city': 'no label', 'addr_cou_1': 'no label', 'alt_name2': 'no label', 'alt_name': 'no label', 'payment_bi': 'no label', 'currency_x': 'no label', 'addr_unit': 'no label', 'addr_suite': 'no label', 'odbl': 'no label', 'email': 'no label', 'air_condit': 'no label', 'wheelchair': 'no label', 'smoking': 'no label', 'opening__2': 'no label', 'branch': 'no label', 'level': 'no label', 'official_n': 'no label', 'addr_provi': 'no label', 'takeaway': 'no label', 'operator': 'no label', 'drive_th_1': 'no label', 'brand_wiki': 'no label', 'brand_wi_1': 'no label', 'brand': 'no label', 'url': 'no label', 'phone': 'no label', 'internet_1': 'no label', 'website': 'no label', 'shop': 'no label', 'gis_pin': 'no label', 'outdoor_se': 'no label', 'name': 'inline label', 'internet_2': 'no label', 'cuisine': 'no label', 'addr_stree': 'no label', 'addr_state': 'no label', 'addr_postc': 'no label', 'addr_hou_1': 'no label', 'addr_city': 'no label', });
+lyr_supermarket_buffer_3.set('fieldLabels', {'gid': 'no label', 'fid': 'header label', 'full_id': 'no label', 'phone': 'no label', 'opening_ho': 'no label', 'addr_stree': 'inline label', 'addr_house': 'no label', 'name': 'no label', '__gid': 'no label', });
+lyr_convenience_buffer_4.set('fieldLabels', {'gid': 'no label', 'fid': 'no label', 'full_id': 'no label', 'osm_id': 'no label', 'osm_type': 'no label', 'shop': 'no label', 'building_l': 'no label', 'email': 'no label', 'contact_we': 'no label', 'contact_ph': 'no label', 'organic': 'no label', 'survey_dat': 'no label', 'payment_vi': 'no label', 'payment__1': 'no label', 'payment_ma': 'no label', 'payment_di': 'no label', 'payment__2': 'header label', 'name_ru': 'no label', 'internet_a': 'header label', 'fuel_regul': 'no label', 'fuel_octan': 'no label', 'fuel_diese': 'no label', 'payment_co': 'no label', 'addr_full': 'no label', 'name_ar': 'no label', 'toilets': 'no label', 'changing_t': 'no label', 'level': 'no label', 'delivery': 'no label', 'air_condit': 'no label', 'old_name': 'no label', 'descriptio': 'no label', 'short_name': 'no label', 'fax': 'no label', 'building': 'no label', 'not_brand_': 'no label', 'name_fa': 'no label', 'payment_de': 'no label', 'payment_cr': 'no label', 'payment_ca': 'no label', 'opening_ho': 'no label', 'addr_house': 'no label', 'entrance': 'no label', 'alt_name': 'no label', 'pin': 'no label', 'lot': 'no label', 'block': 'no label', 'wikipedia': 'no label', 'addr_count': 'no label', 'descript_1': 'no label', 'branch': 'no label', 'addr_unit': 'no label', 'website': 'no label', 'wheelchair': 'no label', 'wheelcha_1': 'no label', 'toilets_wh': 'no label', 'phone': 'no label', 'historic': 'no label', 'ref': 'no label', 'operator': 'no label', 'gnis_state': 'no label', 'gnis_featu': 'no label', 'gnis_creat': 'no label', 'gnis_count': 'no label', 'self_servi': 'no label', 'addr_state': 'no label', 'addr_stree': 'inline label', 'addr_provi': 'no label', 'addr_postc': 'no label', 'addr_hou_1': 'no label', 'addr_city': 'no label', 'opening__1': 'no label', 'name_en': 'no label', 'brand_wiki': 'no label', 'brand_wi_1': 'no label', 'subdivisio': 'no label', 'street_add': 'no label', 'source_ref': 'no label', 'odbl': 'no label', 'gis_pin': 'no label', 'wikidata': 'no label', 'population': 'no label', 'place': 'no label', 'name': 'no label', 'is_in': 'no label', 'import_uui': 'no label', 'gnis_id': 'no label', 'gnis_st_nu': 'no label', 'gnis_st_al': 'no label', 'gnis_cou_1': 'no label', 'gnis_cou_2': 'no label', 'gnis_class': 'no label', 'ele': 'no label', 'brand': 'no label', 'amenity': 'no label', });
+lyr_bike_shop_buffer_5.set('fieldLabels', {'gid': 'no label', 'fid': 'no label', 'full_id': 'no label', 'opening_ho': 'no label', 'phone': 'no label', 'name': 'inline label', 'addr_stree': 'no label', 'addr_house': 'no label', '__gid': 'no label', });
+lyr_post_office_buffer_6.set('fieldLabels', {'gid': 'header label', 'full_id': 'no label', 'osm_id': 'no label', 'opening_ho': 'no label', 'phone': 'no label', 'name': 'inline label', 'addr_stree': 'no label', 'addr_house': 'no label', '__gid': 'no label', });
+lyr_accommodation_buffer_7.set('fieldLabels', {'gid': 'no label', 'full_id': 'no label', 'osm_id': 'no label', 'tourism': 'no label', 'addr_stree': 'no label', 'addr_hou_1': 'no label', 'addr_city': 'no label', 'phone': 'no label', 'operator': 'no label', 'name': 'inline label', '__gid': 'no label', 'name_2': 'no label', 'gpxx_track': 'no label', 'line': 'no label', });
+lyr_accommodation_buffer_7.on('precompose', function(evt) {
+    evt.context.globalCompositeOperation = 'normal';
+});
