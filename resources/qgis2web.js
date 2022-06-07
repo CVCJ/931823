@@ -69,7 +69,7 @@ var map = new ol.Map({
     overlays: [overlayPopup],
     layers: layersList,
     view: new ol.View({
-         maxZoom: 28, minZoom: 1
+         maxZoom: 19, minZoom: 2
     })
 });
 
@@ -624,11 +624,14 @@ map.on("rendercomplete", function(evt) {
         var firstLayerAttribution = attributionList.getElementsByTagName('li')[0];
         var qgis2webAttribution = document.createElement('li');
         qgis2webAttribution.innerHTML = '<a href="https://github.com/tomchadwin/qgis2web">qgis2web</a> &middot; ';
+        var OSMAttribution = document.createElement('li');
+        OSMAttribution.innerHTML = '<a href="https://www.openstreetmap.org/copyright">© OpenStreetMap contributors</a> &middot; ';
         var olAttribution = document.createElement('li');
         olAttribution.innerHTML = '<a href="https://openlayers.org/">OpenLayers</a> &middot; ';
         var qgisAttribution = document.createElement('li');
         qgisAttribution.innerHTML = '<a href="https://qgis.org/">QGIS</a>';
         attributionList.insertBefore(qgis2webAttribution, firstLayerAttribution);
+        attributionList.insertBefore(OSMAttribution, firstLayerAttribution);
         attributionList.insertBefore(olAttribution, firstLayerAttribution);
         attributionList.insertBefore(qgisAttribution, firstLayerAttribution);
         attributionComplete = true;
