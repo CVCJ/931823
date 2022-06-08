@@ -629,11 +629,15 @@ map.on("rendercomplete", function(evt) {
         var olAttribution = document.createElement('li');
         olAttribution.innerHTML = '<a href="https://openlayers.org/">OpenLayers</a> &middot; ';
         var qgisAttribution = document.createElement('li');
-        qgisAttribution.innerHTML = '<a href="https://qgis.org/">QGIS</a>';
+        qgisAttribution.innerHTML = '<a href="https://qgis.org/">QGIS</a> &middot; ';
+        var CCAttribution = document.createElement('li');
+        CCAttribution.innerHTML = '<a href="https://creativecommons.org/licenses/by/4.0/deed.en_US">This work is licensed under a Creative Commons Attribution 4.0 Unported License</a>';
         attributionList.insertBefore(qgis2webAttribution, firstLayerAttribution);
         attributionList.insertBefore(OSMAttribution, firstLayerAttribution);
         attributionList.insertBefore(olAttribution, firstLayerAttribution);
         attributionList.insertBefore(qgisAttribution, firstLayerAttribution);
+        attributionList.insertBefore(CCAttribution, firstLayerAttribution);
         attributionComplete = true;
     }
 })
+
